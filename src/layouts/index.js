@@ -4,6 +4,7 @@ import { Container } from "react-responsive-grid";
 
 require("prismjs/themes/prism-tomorrow.css");
 require("./prism.css");
+require("./global.css");
 
 import { rhythm, scale } from "../utils/typography";
 

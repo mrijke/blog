@@ -27,11 +27,12 @@ export class Intro extends React.PureComponent {
           Hi! I'm{" "}
           <a href="https://github.com/mrijke">
             <strong>Maarten Rijke</strong>
-          </a>, a Dutch dude passionate about anything React &amp; TypeScript!<br />
+          </a>, a Dutch dude passionate about anything TypeScript/React &amp;
+          Python/Django!<br />
           This is my blog. I'll occasionally write here about my adventures in
-          the land of modern frontend development and perhaps also about some
-          sysadmin/devops related things. Read my Hello World post over{" "}
-          <Link to="/hello-world">here</Link>.<br />
+          the land of modern frontend &amp; backend development and perhaps also
+          about some sysadmin/devops related things. Read my Hello World post
+          over <Link to="/hello-world">here</Link>.<br />
           Current stack of choice:<br />
           <strong>Backend</strong>: Python (<a href="https://www.djangoproject.com/">
             Django

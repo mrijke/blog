@@ -28,7 +28,7 @@ class SmallBio extends React.Component {
         />
         <p>
           Hi! I'm <strong>Maarten Rijke</strong>, a Dutch dude passionate about
-          anything React &amp; TypeScript!<br />
+          anything TypeScript/React &amp; Python/Django!<br />
           <a href="https://github.com/mrijke">Check out my GitHub.</a>
         </p>
       </div>

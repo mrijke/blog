@@ -225,7 +225,7 @@ Let's have a closer look at the changes:
 * Once an event has been emitted, we deconstruct it into its three possible values, `progress`, `result` or `error`. In case of `progress`, we dispatch an action that will update our progress. And in case of `result` or `error`, we dispatch their respective actions.
 * Whenever the request is done (i.e. either `result` or `error` has been emitted through the channel), the special `END` symbol is emitted. This causes the saga to break from the `while (true)` loop, and land in the `finally` block of the `try`. Here we could do additional post-processing if we wanted - but for now that is not required.
 
-This looks pretty good - but what if you have multiple endpoints that need to have this behavior? Can we make it more DRY? Stay tuned for the next post to find out!
+This looks pretty good - but what if you have multiple endpoints that need to have this behavior? Can we make it more DRY? What about writing unittests for this? Stay tuned for the next posts to find out!
 
 ### Reading list
 

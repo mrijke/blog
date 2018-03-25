@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{509:function(e,a){e.exports={data:{site:{siteMetadata:{title:"Random Ramblings"}},allMarkdownRemark:{edges:[{node:{excerpt:"redux-saga  is great. It allows you to write complex side-effects easily.\nOne of those more advanced features are  channels , in particular…",fields:{slug:"/redux-saga-upload-progress/"},frontmatter:{date:"24 March, 2018",title:"Tracking file upload progress with redux-saga event channels & superagent"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-9ddc250f248dfff7c6b1.js.map

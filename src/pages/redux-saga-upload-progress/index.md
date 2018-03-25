@@ -94,7 +94,7 @@ If you are unfamiliar with [typescript-fsa](https://github.com/aikoven/typescrip
 1.  `performCreatePhoto (PHOTOS/PERFORM_CREATE_PHOTO)`: This action is the initial trigger for the create photo request. It will be dispatched by a form (which is outside of the scope of this post)
 2.  `createPhoto.started (PHOTOS/CREATE_PHOTO_STARTED)`: This action is dispatched by the saga that handles the upload request. It indicates the beginning of the request.
 3.  `createPhoto.failed (PHOTOS/CREATE_PHOTO_FAILED)`: This action is dispatched by the saga in case the request failed.
-4.  `createPhoto.done (PHOTOS/CREATE_PHOTO_DONE)`: This action is dispatched by the saga when the request has sucessfully completed.
+4.  `createPhoto.done (PHOTOS/CREATE_PHOTO_DONE)`: This action is dispatched by the saga when the request has successfully completed.
 
 Now that we have some actions, we can create the sagas. First, we will create the watcher saga, which will `takeEvery` `performCreatePhoto` action. Then, it will `call` the worker saga, which is the saga actually responsible for the requests:
 
@@ -103,8 +103,8 @@ import { call, takeLatest, put } from "redux-saga/effects";
 import { createPhoto, CreatePhotoAction } from "./actions";
 import { ApiClient } from "./ApiClient";
 
-function* perfomCreatePhotoWatcher() {
-  yield takeLatest(perfomCreate, performCreatePhotoWorker);
+function* performCreatePhotoWatcher() {
+  yield takeLatest(performCreate, performCreatePhotoWorker);
 }
 
 function* performCreatePhotoWorker(action: CreatePhotoAction) {
